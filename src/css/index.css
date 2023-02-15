@@ -2,6 +2,50 @@ body {
   text-align: center;
 }
 
+/* scrool button  */
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  background: linear-gradient(to top,  #00c900,#2c3e50);
+  color: #fff;
+  border: none;
+  border-radius: 10%;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: linear-gradient(to top, #2980b9, #008300);
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 600px) {
+  .scroll-to-top {
+    width: 60px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+}
+
+.scroll-to-top:hover {
+  background: linear-gradient(to top, #2980b9, #1abc9c);
+  color: #fff;
+}
+
+.scroll-to-top:hover::before {
+  transform: rotate(180deg);
+}
+
 
 /* Navigation  */
 button.background-button {
